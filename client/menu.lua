@@ -144,11 +144,6 @@ function OpenCloseMenu()
                     RageUI.Button("Actions véhicules", "Menu d'actions relatif aux véhicules", {RightLabel = "→"}, true, {}, vehicleMenu)
                     RageUI.Button("Liste des joueurs", "Afficher la liste des joueurs", {RightLabel = "→"}, true, {}, playerListMenu)
 
-                    RageUI.Button("Clear des entités", "Clear de toutes les entités sur le serveur (en cas de moddeur genre)", {}, true, {
-                        onSelected = function()
-                            TriggerEvent("byebyeEntities")
-                        end
-                    })
                 end)
 
                 RageUI.IsVisible(selfMenu, function()
